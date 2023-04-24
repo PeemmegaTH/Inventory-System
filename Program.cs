@@ -42,6 +42,8 @@ namespace Amongus
                     Console.WriteLine();
                     Console.WriteLine(item[i]);
                     Console.WriteLine(type[i]);
+                    finded++;    
+
                 } else {
                     if (type[i] == typeSearch) {
                         Console.WriteLine();
