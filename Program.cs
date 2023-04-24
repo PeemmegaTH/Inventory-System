@@ -53,7 +53,11 @@ namespace Amongus
                 }
             }
 
-            if (finded == 0) { return false; }
+            if (finded == 0) { 
+                Console.WriteLine();
+                Console.WriteLine("End");
+                return false; 
+            }
             return true;
         }
         
