@@ -36,10 +36,7 @@ namespace Amongus
         static bool Search_Item_From_Inventory(string[] item,string[] type,string typeSearch){
             int max = item.Count();
 
-            if (typeSearch == "End") {
-                return false;
-            }
-
+            int finded = 0;
             for (int i = 0;i < max;i++){
                 if (typeSearch == "ShowAll"){
                     Console.WriteLine();
@@ -48,11 +45,13 @@ namespace Amongus
                 } else {
                     if (type[i] == typeSearch) {
                         Console.WriteLine();
-                        Console.WriteLine(item[i]);    
+                        Console.WriteLine(item[i]);
+                        finded++;    
                     }
                 }
             }
 
+            if (finded == 0) { return false; }
             return true;
         }
         
