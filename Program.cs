@@ -18,7 +18,7 @@ namespace Amongus
                 Console.WriteLine();
                 Console.WriteLine("Pls Don't input 'ShowAll'");
                 Console.WriteLine();
-                getItemType();
+                itemtype =  getItemType();
             }
 
             return itemtype;
